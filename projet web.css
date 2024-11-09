@@ -1,12 +1,46 @@
-. rectangle 1
-{ 
-top: -29px;
-gap: 0px;
-opacity: 0px;
-width: 1232px;
-height: 103px;
-flex-shrink: 0;
-background: #BB2650;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
 
+/* Logo de la galerie */
+.logo {
+  width: 67px;
+height: 67px;
+flex-shrink: 0;
+}
+
+/* Style du menu de navigation */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 15px;
+  transition: background-color 0.3s ease;
+}
+
+/* Effet au survol */
+nav ul li a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
