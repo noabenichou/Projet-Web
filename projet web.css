@@ -1,46 +1,41 @@
+/* Style de base */
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
-  background-color: #333;
-  color: #fff;
+header, footer {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
 
-/* Logo de la galerie */
-.logo {
-  width: 67px;
-height: 67px;
-flex-shrink: 0;
-}
-
-/* Style du menu de navigation */
 nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  gap: 15px;
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
-nav ul li {
-  display: inline;
+section {
+    max-width: 800px;
+    padding: 20px;
 }
 
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  padding: 8px 15px;
-  transition: background-color 0.3s ease;
-}
+/* Style responsive */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
 
-/* Effet au survol */
-nav ul li a:hover {
-  background-color: #555;
-  border-radius: 5px;
+    .exhibition-options {
+        display: flex;
+        flex-direction: column;
+    }
 }
