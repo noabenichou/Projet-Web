@@ -108,7 +108,7 @@ nav ul {
 }
 
 .logo {
-      width: 100px;
+     width: 100px;
     height: 100px;
     flex-shrink: 0;
     fill: url("logo.png") lightgray 50% / cover no-repeat;
