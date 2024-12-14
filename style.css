@@ -107,7 +107,17 @@ nav ul {
     cursor: pointer;
 }
 
-.logo {
+.logo {width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+    fill: url("logo.png") lightgray 50% / cover no-repeat;
+    stroke-width: 1px;
+    stroke: #BB2650;
+    padding-right: 2px;
+    padding-left: 1313px;
+    max-width: 100%;
+    position: relative; 
+    transform: translateY(-70px); 
     }
 
 section {
