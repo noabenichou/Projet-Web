@@ -25,13 +25,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 3024px;
+    max-width: 3024rem;
     width: 100%;
+    height: 100%;
 }
 
-
 .ligne-verticale {
-     width: 0;
+    width: 0;
     border-left: 2px solid black;
     height: 500px; 
     margin: 0 20px;
@@ -39,7 +39,7 @@ body {
 
 header {
     width: 100%;
-    height: 118px;
+    height: 125px;
     background-color: #b30047;
     text-align: center;
 }
@@ -108,18 +108,18 @@ nav ul {
 }
 
 .logo {
-     width: 100px;
+    width: 100px;
     height: 100px;
-    flex-shrink: 0;
     fill: url("logo.png") lightgray 50% / cover no-repeat;
     stroke-width: 1px;
     stroke: #BB2650;
-    padding-right: 2px;
-    padding-left: 1313px;
+    padding-right: 1px;
+    padding-left: 1316px;
+    padding-top: 1px;
     max-width: 100%;
     position: relative; 
     transform: translateY(-70px); 
-    }
+}
 
 section {
     width: 100%;
@@ -197,6 +197,7 @@ h2{
     font-size: 32px;
     font-style: normal;
     font-weight: 400;
+    justify-content: flex-end;
 
 }
 
@@ -206,7 +207,6 @@ h2{
     background-color: black;
     
 }
-
 
 #expositions {
     max-width: 100%;
@@ -231,7 +231,7 @@ h2{
     display: flex;
     justify-content: center;
     gap: 50px; 
-    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 .categorie {
@@ -243,7 +243,6 @@ h2{
     font-size: 24px;
     margin-bottom: 10px;
     color: #b91c47; 
-    border-bottom: 2px solid #b91c47;
     display: inline-block;
     padding-bottom: 5px;
     font-family: "IM FELL Double Pica";
@@ -264,27 +263,34 @@ h2{
     object-fit: cover;
 }
 
-
 .reservation {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
-    margin-top: 30px;
+    margin-top: 200px;
 }
 
 .image-container img {
-    width: 250px;
-    height: auto;
+   width: 329px;
+height: 457px;
+transform: rotate(-0.04deg);
+flex-shrink: 0;
+background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+box-shadow: 10px 5px 4px 0px rgba(0, 0, 0, 0.25);
+display: flex;
+ flex-direction: row;
+    margin-left: 300px;
 }
 
 .actions {
-    text-align: left;
+    text-align: centre;
     width: 60%; 
+
 }
 
 .actions p {
-    font-size: 16px;
+    font-size: 24px;
     margin-bottom: 10px;
 }
 
@@ -294,15 +300,64 @@ h2{
 }
 
 button {
-    background-color: #b91c47;
+    background-color: #EBD9A6;
     color: white;
     border: none;
     padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
     margin-bottom: 10px;
+    border-radius: 10px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), #EBD9A6;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 button:hover {
-    background-color: #a3143e; 
+    background-color: #c4b27e; 
+}
+
+.contact-item {
+  display: flex; 
+  color: white; 
+  font-size: 18px; 
+  gap: 5px; 
+}
+
+.icon {
+  width: 30px; 
+  height: 30px;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    width: 100%;
+    height: 80px;
+    background-color: #b30047;
+    text-align: center;
+    position: absolute;
+    margin-top: 2300px;
+}
+
+.ligne-horizontale2 {
+    width: 70%; 
+    height: 2px;
+    background-color: black;
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        flex-direction: column;
+    }
+    .box {
+        flex: 1 1 100%; 
+    }
 }
