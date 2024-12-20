@@ -41,7 +41,7 @@ nav ul {
     padding: 0;
     display: flex;
     gap: 2rem;
-    padding-left: 15rem;
+    padding-left: 10rem;
     top: 7rem;
 }
 
@@ -127,7 +127,7 @@ nav ul {
 .about-content {
     display: flex;
     flex-wrap: wrap; 
-    gap: 1rem;
+    gap: 5rem;
     justify-content: center;
     margin-left: -2rem;
     top: 40px;
@@ -162,11 +162,11 @@ h1{
 }
 
 .image-style {
-    width: 34.3125rem;
-    height: 27.75rem;
+    width: 38rem;
+    height: 29rem;
     flex-shrink: 0;
     background: url("art moderne.png") lightgray 50% / cover no-repeat;
-    box-shadow: 0rem 0.25rem 0.25rem 0rem rgba(0, 0, 0, 0.25); 
+    box-shadow: 0rem 1rem 1rem 0rem rgba(0, 0, 0, 0.25); 
 }
 
 .about-text {
