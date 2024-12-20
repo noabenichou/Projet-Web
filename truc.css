@@ -43,6 +43,7 @@ nav ul {
     gap: 2rem;
     padding-left: 10rem;
     top: 7rem;
+    cursor: pointer;
 }
 
 
@@ -100,6 +101,9 @@ nav ul {
     font-weight: 20;
     cursor: pointer;
 }
+
+nav ul li:hover { background-color: #825252; color: white; }
+nav ul li:active { background-color: #A67070; color: white; }
 
 .logo {
     width: 5.5rem;
@@ -300,55 +304,80 @@ h2{
     height: 28.5625rem;
     transform: rotate(-0.04deg);
     flex-shrink: 0;
-    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+    background: url(images/street art2) lightgray 50% / cover no-repeat;
     box-shadow: 0.625rem 0.3125rem 0.25rem 0rem rgba(0, 0, 0, 0.25);
     display: flex;
     flex-direction: row;
-    margin-left:
+    max-width: 100%;
+    margin-left: 300px;
 }
 
 .actions {
     text-align: center;
-    width: 37.5rem; /* 60% de 60rem */
+    width: 22rem; 
+    margin-right: 250px;
+    text-align: left;
 }
 
 .actions p {
     font-size: 1.5rem; /* 24px */
     margin-bottom: 0.625rem; /* 10px */
+    font-family: "IM FELL Double Pica";
 }
 
 .actions p span {
     color: #b91c47;
     font-weight: bold;
+    font-family: "IM FELL Double Pica";
 }
 
 button {
     background-color: #EBD9A6;
     color: white;
     border: none;
-    padding: 0.625rem 0.9375rem; /* 10px 15px */
-    border-radius: 0.3125rem; /* 5px */
+    padding: 0.625rem 0.9375rem; 
+    border-radius: 0.3125rem;
+    width: 202px;
+    height: 54px;
+    flex-shrink: 0;
+    font-family: "IM FELL Double Pica";
+    font-size: 24px;
+    text-align: center;
+    color: black;
     cursor: pointer;
-    margin-bottom: 0.625rem; /* 10px */
-    border-radius: 0.625rem; /* 10px */
+    margin-bottom: 0.625rem; 
+    border-radius: 0.625rem; 
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), #EBD9A6;
-    box-shadow: 0px 0.25rem 0.25rem 0px rgba(0, 0, 0, 0.25); /* 4px */
+    box-shadow: 0px 0.25rem 0.25rem 0px rgba(0, 0, 0, 0.25); 
 }
 
 button:hover {
     background-color: #c4b27e;
 }
 
-footer .contact-item {
+footer .contact-section {
     display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0;
+    width: 100%;
+    height: 100px;
+    background-color: #b30047;
+}
+
+.contact-item {
+    display: flex;
+    flex-wrap: wrap;
     color: white;
-    font-size: 1.125rem; /* 18px */
-    gap: 0.03125rem; /* 0.5px */
+    font-size: 1.125rem; 
+    gap: 1rem; 
 }
 
 .icon {
-    width: 1.875rem; /* 30px */
-    height: 1.875rem; /* 30px */
+    width: 1.875rem; 
+    height: 1.875rem; 
 }
 
 .contact-section {
@@ -357,16 +386,16 @@ footer .contact-item {
     align-items: center;
     color: white;
     width: 100%;
-    height: 5rem; /* 80px */
+    height: 5rem; 
     background-color: #b30047;
     text-align: center;
     position: absolute;
-    margin-top: 143.75rem; /* 2300px */
+    margin-top: 143.75rem; 
 }
 
 .ligne-horizontale2 {
-    width: 43.75rem; /* 70% de 70rem */
-    height: 0.125rem; /* 2px */
+    width: 43.75rem; 
+    height: 0.125rem; 
     background-color: black;
 }
 
